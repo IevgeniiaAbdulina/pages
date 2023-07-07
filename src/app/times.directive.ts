@@ -6,8 +6,8 @@ import { Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
 export class TimesDirective {
 
   constructor(
-    private viewContainer: ViewContainerRef, // container
-    private templateRef: TemplateRef<any> // item inside container
+    private viewContainer: ViewContainerRef,
+    private templateRef: TemplateRef<any>
   ) { }
 
   @Input('appTimes') set render(times: number) {
